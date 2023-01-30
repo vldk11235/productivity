@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../font/gothammedium-webfont.woff2') format('woff2'),
+    url('../font/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.main {
+    flex: 2;
+    width: 100%;
+    border-bottom: 1px solid rgba(188, 208, 229, 0.496913);
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-wrapper {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.title {
+    font-weight: 700;
+    color: #2F281E;
+}
+
+.secondary_title {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+/* Icons */
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'FontAwesome', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.icon_purple {
+    background-color: #7752BE;
+}
+
+.icon_orange {
+    background: #FAB005;
+}
+
+.icon_red {
+    background: #F03E3D;
+}
+
+.icon_blue {
+    background: #4DADF7;
+}
+
+/* Buttons */
+
+.button {
+    background-color: #FF9900;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.button_small {
+    padding: 13px 25px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.button_large {
+    font-family: 'Poppins', sans-serif;
+    padding: 13px 40px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.button_transparent {
+    border: 1px solid #BCD0E5;
+    color: #2F281E;
+    background-color: transparent;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-basis: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header__nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+.header__nav-link:first-child {
+    color: #FF9900;
+}
+
+/* First screen */
+
+.first-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px auto 0;
+}
+
+.first-screen__title {
+    font-size: 44px;
+    line-height: 54px;
+}
+
+.first-screen__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.features__title {
+    max-width: 540px;
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+.features__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 45px;
+    margin-bottom: 70px;
+}
+
+.features__item-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 30px 0 15px;
+}
+
+.features__list-item {
+    max-width: 270px;
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px 0;
+    max-height: 350px;
+}
+
+.footer-nav__title {
+    font-family: 'gothammedium', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer-nav {
+    min-width: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-nav__link:first-of-type {
+    margin-top: 15px;
+}
+
+.footer-nav__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.sign-up-form {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.sign-up-form__input {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.sign-up-form__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BCD0E5;
+}
